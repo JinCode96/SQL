@@ -48,5 +48,29 @@ delete from `User1` where `uid` = 'A102' and `age` = 23;
 delete from `User1` where `age` >= 30;
 
 #실습1-7
+create table `TblUser` (
+	`userId` varchar(10),
+    `userName` varchar(10),
+    `userHp` char(13),
+    `userAge` tinyint,
+    `userAddr` varchar(20)
+);
+
+create table `TblProduct` (
+	`prdCode` int,
+    `prdName` varchar(10),
+    `prdPrice` int,
+    `prdAmount` int,
+    `prdCompany` varchar(10),
+    `prdMakedate` date
+);
 #실습1-8
+insert into `TblUser` values ('p101','김유신','010-1234-1001','25','서울시 중구');
+insert into `TblUser` values ('p102','김춘추','010-1234-1002','23','부산시 금정구');
+insert into `TblUser` values ('p103','장보고','010-1234-1003','31','경기도 광주군');
+insert into `TblUser` values ('p104','강감찬','010-1234-1004','경남 창원시');
+insert into `TblUser` values ('p105','이순신','010-1234-1005','50','null');
+
+
+
 #실습1-9
